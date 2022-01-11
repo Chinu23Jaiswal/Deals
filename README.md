@@ -16,4 +16,16 @@ Create an API to list all the items which are having deals
 Create an API to purchase items on deal
 Create an API to check the timings on deal
 Once the item has been purchased the totalQuantity of the item should reduce by 1 
+It is an MVC structure, hibernate was used for DataBase Connectivity through JPA/DAOLayer
+What I wanted to do:
+
+Create three tables:
+User:                items:           deals:
+User_id              item_id          deal_id
+name                 item_name        item_id
+Dealavail            quantity         start_time
+                                      end_time
+API                            
+POST/purchase{user_id,item_id}
+
 
